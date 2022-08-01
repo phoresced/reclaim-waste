@@ -1,0 +1,181 @@
+/* Line 111: responsive rules for desktop
+Line 127: responsive rules for tablet
+Line 141: responsive rules for mobile */
+
+/* COLOURS
+* #ADCF9F muted green
+^ #CED89E yellowest green
+& #FFDCAE nice orange
+*/
+
+body {
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #76BA99;
+}
+
+
+.header {
+  display: grid;
+  background-color: #ADCF9F;
+  font-size: 18pt;
+  text-shadow: #FFDCAE;
+  height: 60px;
+  width: 100%;
+  max-height: 90px;
+  padding: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin: 2px;
+  margin-bottom: -1px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.tagline {
+  position: absolute;
+  float: center;
+  background-color: #FFDCAE;
+  font-size: 20px;
+  height: 25px;
+  width: 99%;
+  max-height: 25px;
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 1px;
+  text-align: center;
+}
+
+.container {
+  background-color: #88caaa;
+  position: flex;
+  flex-wrap: nowrap;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+  padding-right: 22px;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.searchbar {
+  margin-left: 30%;
+  width: 260px;
+  min-width: 20px;
+  max-width: 400px;
+  height: 40px;
+  max-height: 60px;
+  border-radius: 5%;
+  border-color: #CED89E;
+  border-width: 4px;
+}
+
+.button {
+  height: 30px;
+  width: 50px;
+  margin-left: 50%;
+  background-color: #CED89E;
+}
+
+.icon {
+  height: 70px;
+  width: 55px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: #9FCFB8;
+  float: left;
+  width: 70px;
+  margin: 1px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  justify-content: center;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 34px;
+  max-width: 100px;
+  height: 450px;
+  max-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0vh;
+  left: 0;
+  padding: 10px;
+  height: 25px;
+  margin: 0;
+  margin-left: 8px;
+  margin-bottom: -10px;
+  width: 100%;
+  background-color: #CED89E;
+  font-size: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.addNew {
+  color:#266347;
+  font-size: 34pt;
+  text-shadow: -3px -2px #ADCF9F;
+  background-color:#FFDCAE;
+  height: 50px;
+  width: 50px;
+  border-color: #266347;
+  border-width: 2px;
+  text-decoration: none;
+  padding: 2px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* SPECIFY rules for DESKTOP */
+@media screen and (min-width: 1000px) {
+  .header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+
+/* SPECIFY rules for TABLET */
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    background-color: #266347;
+  }
+  .nav {
+    width: 90%;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+/* SPECIFY rules for MOBILE */
+@media screen and (max-width: 320px) {
+  .header {
+    width: 100%;
+    background-color:#578a72
+  }
+  .nav {
+    width: 80%;
+  }
+  .container {
+    width: 80%;
+  }
+  .footer {
+    width: 0;
+    height: 0;
+  }
+}
